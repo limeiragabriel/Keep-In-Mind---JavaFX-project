@@ -1,0 +1,27 @@
+/* ---------------------- notes button ------------------ */
+.notesBtn {
+    -fx-graphic: url("../images/notes.png");
+}
+
+.notesBtn:hover {
+    -fx-graphic: url("../images/notesHover.png");
+}
+/* ---------------------- -------------- ------------------ */
+/* ---------------------- statistics button ------------------ */
+.statisticsBtn {
+	-fx-graphic: url("../images/statistics.png");
+}
+
+.statisticsBtn:hover {
+	-fx-graphic: url("../images/statisticsHover.png");
+}
+/* ---------------------- -------------- ------------------ */
+/* ---------------------- statistics button ------------------ */
+.logoutBtn {
+	-fx-graphic: url("../images/logout.png");
+}
+
+.logoutBtn:hover {
+	-fx-graphic: url("../images/logoutHover.png");
+}
+/* ---------------------- -------------- ------------------ */

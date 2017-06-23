@@ -1,0 +1,46 @@
+.box {
+    -fx-font-size: 72;
+    -fx-font-weight: Bold;
+    -fx-text-fill: "#5b5b5b";
+
+}
+.box2{
+    -fx-text-fill: "#5b5b5b";
+
+}
+
+.refreshNotesBtn {
+    -fx-graphic: url("../images/refreshBtn.png");
+}
+
+.addNotesBtn {
+    -fx-graphic: url("../images/plusBtn.png");
+}
+
+.removeNoteBtn{
+	-fx-background-color: "#D32F2F";
+}
+
+.checkNoteBtn{
+	-fx-graphic: url("../images/checkBtn.png");
+}
+
+.confirmBtn{
+	-fx-background-color: "#4CAF50";
+	-fx-font-size: 14;
+	-fx-text-fill: "#FFFFFF";
+	-fx-font-weight: Bold;
+	-fx-cursor: Hand;
+}
+
+.cancelBtn{
+	-fx-background-color: "#D32F2F";
+	-fx-font-size: 14;
+	-fx-text-fill: "#FFFFFF";
+	-fx-font-weight: Bold;
+	-fx-cursor: Hand;
+}
+
+.note{
+	-fx-background-color: "#C5CAE9";
+}

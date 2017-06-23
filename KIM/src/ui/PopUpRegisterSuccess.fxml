@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="120.0" prefWidth="250.0" style="-fx-background-color: #4CAF50;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4CAF50;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="120.0" layoutY="15.0" text=":)" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="43.0" text="Usuario cadastrado com sucesso!" textFill="WHITE" />
+            <Label layoutX="49.0" layoutY="69.0" text="Faça login e comece a usar o" textFill="WHITE" />
+            <Label layoutX="87.0" layoutY="86.0" text="Keep In Mind!" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

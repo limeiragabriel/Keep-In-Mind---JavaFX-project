@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-color: #E8EAF6;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Main">
+   <center>
+      <Pane prefHeight="600.0" prefWidth="739.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="50.0" prefWidth="788.0" style="-fx-background-color: #3F7CBD;">
+               <children>
+                  <Label layoutX="45.0" layoutY="18.0" text="Notes" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="addNoteBtn" graphicTextGap="0.0" layoutX="637.0" layoutY="523.0" mnemonicParsing="false" onAction="#setNewNote" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #E8EAF6;" styleClass="addNotesBtn" stylesheets="@application.css">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ScrollPane hbarPolicy="NEVER" layoutX="28.0" layoutY="66.0" prefHeight="390.0" prefWidth="685.0">
+               <content>
+                  <VBox fx:id="noteBox" prefWidth="678.0" spacing="30.0" styleClass="box2" stylesheets="@application.css" />
+               </content>
+            </ScrollPane>
+            <TextField fx:id="titleInput" layoutX="67.0" layoutY="521.0" prefHeight="25.0" prefWidth="195.0" />
+            <TextArea fx:id="textInput" layoutX="322.0" layoutY="522.0" prefHeight="57.0" prefWidth="311.0" wrapText="true" />
+            <Label layoutX="30.0" layoutY="489.0" text="Add a new Note:" textFill="#545454">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="523.0" text="Title:" textFill="#545454">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="286.0" layoutY="524.0" text="Text:" textFill="#545454">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="refresh" graphicTextGap="0.0" layoutX="667.0" layoutY="455.0" mnemonicParsing="false" onAction="#refreshNotes" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #E8EAF6;" styleClass="refreshNotesBtn" stylesheets="@application.css">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children></Pane>
+   </center>
+</BorderPane>

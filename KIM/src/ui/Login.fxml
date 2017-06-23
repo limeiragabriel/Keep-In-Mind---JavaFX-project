@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Main">
+   <center>
+      <Pane onDragDetected="#showNotes" prefHeight="600.0" prefWidth="800" style="-fx-background-color: #263238;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="132.0" fitWidth="131.0" layoutX="334.0" layoutY="76.0">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="userName" layoutX="252.0" layoutY="323.0" prefHeight="50.0" prefWidth="294.0" promptText="User Name...">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="229.0" layoutY="214.0" prefHeight="36.0" prefWidth="175.0" text="Welcome to" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="224.0" layoutY="232.0" prefHeight="72.0" prefWidth="461.0" text="Keep In Mind" textFill="WHITE">
+               <font>
+                  <Font name="Candara Bold" size="60.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" layoutX="252.0" layoutY="396.0" prefHeight="50.0" prefWidth="294.0" promptText="***********">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="registerBtn" layoutX="251.0" layoutY="469.0" mnemonicParsing="false" onAction="#register" prefHeight="50.0" prefWidth="143.0" style="-fx-background-color: #00ACC1;" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="loginBtn" layoutX="403.0" layoutY="469.0" mnemonicParsing="false" onAction="#enterSys" prefHeight="50.0" prefWidth="143.0" style="-fx-background-color: #4CAF50;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

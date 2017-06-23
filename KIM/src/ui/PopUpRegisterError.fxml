@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="120.0" prefWidth="250.0" style="-fx-background-color: #00ACC1;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00ACC1;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="102.0" layoutY="14.0" text="Opa :(" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="79.0" layoutY="39.0" prefHeight="17.0" prefWidth="168.0" text="Ocorreu um erro!" textFill="WHITE" />
+            <Label layoutX="52.0" layoutY="56.0" prefHeight="23.0" prefWidth="197.0" text="Usuario informado invalido." textAlignment="JUSTIFY" textFill="WHITE" />
+            <Label layoutX="30.0" layoutY="79.0" prefHeight="21.0" prefWidth="221.0" text="Tente novamente com outros dados" textAlignment="JUSTIFY" textFill="WHITE" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

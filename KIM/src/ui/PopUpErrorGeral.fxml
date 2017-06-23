@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="120.0" prefWidth="250.0" style="-fx-background-color: #00ACC1;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <Pane prefHeight="139.0" prefWidth="274.0" style="-fx-background-color: #00ACC1;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="110.0" layoutY="-5.0" prefHeight="65.0" prefWidth="30.0" text=":(" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="47.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="73.0" prefHeight="17.0" prefWidth="94.0" text="Ocorreu um erro!" textFill="WHITE" />
+            <Label layoutX="72.0" layoutY="90.0" prefHeight="17.0" prefWidth="106.0" text="Tente Novamente." textFill="WHITE" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

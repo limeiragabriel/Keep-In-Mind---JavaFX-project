@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Main">
+   <left>
+      <Pane prefHeight="600.0" prefWidth="61.0" style="-fx-background-color: #343A3E;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="notesBtn" alignment="CENTER" graphicTextGap="0.0" layoutX="-1.0" layoutY="1.0" mnemonicParsing="false" onAction="#showNotes" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #343A3E;" styleClass="notesBtn" stylesheets="@sidebar.css">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="statisticsBtn" alignment="CENTER" graphicTextGap="0.0" layoutX="-1.0" layoutY="61.0" mnemonicParsing="false" onAction="#showStatistics" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #343A3E;" styleClass="statisticsBtn" stylesheets="@sidebar.css">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="logoutBtn" alignment="CENTER" graphicTextGap="0.0" layoutX="-1.0" layoutY="539.0" mnemonicParsing="false" onAction="#showLogin" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #343A3E;" styleClass="logoutBtn" stylesheets="@sidebar.css">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+   </left>
+</BorderPane>
