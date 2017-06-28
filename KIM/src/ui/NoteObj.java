@@ -3,6 +3,8 @@ package ui;
 import java.io.IOException;
 import java.sql.SQLException;
 
+import com.sun.javafx.geom.Rectangle;
+
 import application.Tarefa;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,6 +14,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Separator;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
@@ -65,12 +69,18 @@ public class NoteObj {
 		Text texto2 = new Text("Feita");
 		Text texto3 = new Text("Cancelada");
 		
+		ImageView cor = new ImageView();
+		cor.setLayoutX(0);
+		cor.setLayoutY(0);
+		
 		deleteBtn.setOnAction(e -> {
 
 			note.getChildren().clear();
 			
 			texto1.setLayoutY(10);
-			note.getChildren().add(texto1);
+			cor.setImage(new Image("@/../images/vermelho.png"));
+			
+			note.getChildren().addAll(cor,texto1);
 			
 			for(Tarefa tarefa : Controle.obterTarefas() ){
 				
@@ -86,11 +96,13 @@ public class NoteObj {
 		});
 		
 		marcaFeitaBtn.setOnAction(e -> {
-			//note.setVisible(false);
+			
 			note.getChildren().clear();
-
+			
 			texto2.setLayoutY(10);
-			note.getChildren().add(texto2);
+			cor.setImage(new Image("@/../images/verde.png"));
+			
+			note.getChildren().addAll(cor,texto2);
 			
 			for(Tarefa tarefa : Controle.obterTarefas() ){
 				
@@ -106,11 +118,13 @@ public class NoteObj {
 		});
 		
 		marcaCanceladaBtn.setOnAction(e -> {
-			//note.setVisible(false);
+
 			note.getChildren().clear();
 
 			texto3.setLayoutY(10);
-			note.getChildren().add(texto3);
+			cor.setImage(new Image("@/../images/azul.png"));
+			
+			note.getChildren().addAll(cor,texto3);
 			
 			for(Tarefa tarefa : Controle.obterTarefas() ){
 				
